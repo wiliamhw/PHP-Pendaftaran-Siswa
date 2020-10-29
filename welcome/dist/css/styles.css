@@ -10422,11 +10422,6 @@ body {
     margin-right: 0;
 }
 
-#edit,
-#hapus {
-    margin: 0 6px;
-}
-
 
 /* Main-col */
 
@@ -10474,14 +10469,6 @@ article#main-col {
 
 
 /* Media Queries */
-
-@media(max-width: 1375px) {
-    #edit,
-    #hapus {
-        margin: 5px auto;
-        display: block;
-    }
-}
 
 @media(max-width: 768px) {
     article#main-col,

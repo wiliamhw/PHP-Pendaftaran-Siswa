@@ -103,7 +103,8 @@ require_once "../../config.php";
                                             <th>Jenis Kelamin</th>
                                             <th>Agama</th>
                                             <th>Sekolah Asal</th>
-                                            <th>Tindakan</th>
+                                            <th>Edit</th>
+                                            <th>Hapus</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -115,7 +116,8 @@ require_once "../../config.php";
                                             <th>Jenis Kelamin</th>
                                             <th>Agama</th>
                                             <th>Sekolah Asal</th>
-                                            <th>Tindakan</th>
+                                            <th>Edit</th>
+                                            <th>Hapus</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
@@ -137,8 +139,9 @@ require_once "../../config.php";
 
                                                 <td>
                                                     <a href="form-edit.php?id=<?= $siswa['id'] ?>"><button id='edit' type='button' class='btn btn-info'>Edit</button></a>
-                                                    <a href="../../hapus.php?id=<?= $siswa['id'] ?>" 
-                                                        onclick="return confirm('Tetap ingin menghapus <?= $siswa['nama'] ?> (Id=<?= $siswa['id'] ?>)');">
+                                                </td>
+                                                <td>
+                                                    <a href="../../hapus.php?id=<?= $siswa['id'] ?>" onclick="return confirm('Tetap ingin menghapus <?= $siswa['nama'] ?> (Id=<?= $siswa['id'] ?>)');">
                                                         <button id='hapus' type='button' class='btn btn-danger'>Hapus</button>
                                                     </a>
                                                 </td>
