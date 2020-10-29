@@ -1,0 +1,17 @@
+/* Form */
+
+#form {
+    width: 40%;
+    min-width: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#submitButton {
+    float: right;
+    margin: 30px 0;
+}
+
+#row {
+    float: right;
+}
