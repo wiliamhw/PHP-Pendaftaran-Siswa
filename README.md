@@ -1,3 +1,10 @@
+# Tools
+* HTML5
+* CSS3
+* Javascript
+* MySQL
+* PHP
+
 # Fitur
 * CRUD
 * Login and register dua level (admin dan user)
