@@ -1,9 +1,9 @@
 <?php
 
-// Main page address relative to entry/assets
+// Main page address relative to entry/assets or entry/views
 $mainAddress = "../../main/views/index.view.php";
 
-// Entry page address relative to main/assets
+// Entry page address relative to main/assets or entry/views
 $entryAddress = "../../entry/views/index.view.php";
 
 /* Database credentials. Assuming you are running MySQL

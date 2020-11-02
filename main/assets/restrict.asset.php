@@ -1,5 +1,5 @@
 <?php
 if ($_SESSION["role"] == "user") {
-    header("location: ../../entry/views/index.view.php");
+    header("location: ../../401.php" . "?to=entry");
     exit;
 }

@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Menu utama CRUD" />
     <meta name="author" content="WHW" />
-    <title>My project - <?= ucwords($_SESSION['role']); ?> </title>
+    <title><?= $title ?> - <?= ucwords($_SESSION['role']); ?> </title>
     <link href="../css/styles.css" rel="stylesheet" type="text/css"/>
     <link href="../css/form.css" rel="stylesheet" type="text/css">
     <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />

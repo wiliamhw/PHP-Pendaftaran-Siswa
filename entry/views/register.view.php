@@ -1,4 +1,5 @@
 <?php
+$title = "User registration"; // define title addon
 require "../assets/register.asset.php"; // Backend
 require "partials/head.php"; // Front-end template
 ?>

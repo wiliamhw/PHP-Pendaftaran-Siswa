@@ -18,7 +18,8 @@ if (isset($_GET['id'])) {
             // Redirect to list-siswa
             header("Location: ../views/list-siswa.view.php");
         } else {
-            die("Gagal menghapus...");
+            // Gagal menghapus
+            header("location: ../views/500.php" . "?err=2");
         }
     }
 }

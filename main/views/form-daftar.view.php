@@ -1,4 +1,5 @@
 <?php
+$title = "Insert data"; // define title addon
 require "../assets/core.asset.php";
 require "../assets/restrict.asset.php";
 require "../assets/form-daftar.asset.php";

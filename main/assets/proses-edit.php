@@ -21,7 +21,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Redirect to list-siswa page
             header("location: ../views/list-siswa.view.php");
         } else {
-            die("Gagal menyimpan perubahan...");
+            // Gagal menyimpan perubahan...
+            header("location: ../views/500.php" . "?err=3");
         }
     }
 }

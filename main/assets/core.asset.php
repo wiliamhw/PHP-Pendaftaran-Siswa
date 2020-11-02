@@ -7,6 +7,6 @@ require_once "../../config.php";
 session_start();
 
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-    header("location: " . $entryAdress);
+    header("location: ../../401.php" . "?to=dashboard");
     exit;
 }

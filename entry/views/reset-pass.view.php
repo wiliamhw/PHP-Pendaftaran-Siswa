@@ -1,4 +1,6 @@
 <?php
+$title = "Admin reset pass"; // define title addon
+require "../../config.php"; // to get main page address
 require "../assets/reset-pass.asset.php"; // Backend
 require "partials/head.php"; // Front-end template
 ?>
@@ -38,7 +40,7 @@ require "partials/head.php"; // Front-end template
 
 
     <div class="text-center p-t-136">
-        <a class="txt2" href="../../main/dist/index.php">
+        <a class="txt2" href=<?= $mainAddress ?>>
             Kembali
             <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
         </a>

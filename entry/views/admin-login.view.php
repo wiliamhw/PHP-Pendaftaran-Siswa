@@ -1,4 +1,5 @@
 <?php
+$title = "Admin login"; // define title addon
 require "../assets/admin-login.asset.php"; // backend
 require "partials/head.php"; // front end template
 ?>

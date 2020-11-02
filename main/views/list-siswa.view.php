@@ -1,4 +1,5 @@
 <?php
+$title = "Edit data"; // define title addon
 require "../assets/core.asset.php";
 require "../assets/restrict.asset.php";
 require "partials/head.php";
@@ -28,8 +29,7 @@ require "partials/head.php";
                                 <th>Jenis Kelamin</th>
                                 <th>Agama</th>
                                 <th>Sekolah Asal</th>
-                                <th>Edit</th>
-                                <th>Hapus</th>
+                                <th>Tindakan</th>
                             </tr>
                         </thead>
                         <tfoot>
@@ -41,8 +41,7 @@ require "partials/head.php";
                                 <th>Jenis Kelamin</th>
                                 <th>Agama</th>
                                 <th>Sekolah Asal</th>
-                                <th>Edit</th>
-                                <th>Hapus</th>
+                                <th>Tindakan</th>
                             </tr>
                         </tfoot>
                         <tbody>
@@ -63,10 +62,8 @@ require "partials/head.php";
                                     <td><?= $siswa['sekolah_asal'] ?></td>
 
                                     <td>
-                                        <a href="form-edit.view.php?id=<?= $siswa['id'] ?>"><button id='edit' type='button' class='btn btn-info'>Edit</button></a>
-                                    </td>
-                                    <td>
-                                        <a href="../assets/hapus.php?id=<?= $siswa['id'] ?>" onclick="return confirm('Tetap ingin menghapus <?= $siswa['nama'] ?> (Id=<?= $siswa['id'] ?>)');">
+                                        <a href="form-edit.view.php?id=<?= $siswa['id'] ?>"><button id='edit' type='button' class='btn btn-info'>Edit</button></a> | 
+                                        <a href="../assets/hapus.php?id=<?= $siswa['id'] ?>" onclick="return confirm('Yakin ingin menghapus <?= $siswa['nama'] ?> (Id=<?= $siswa['id'] ?>) ?');">
                                             <button id='hapus' type='button' class='btn btn-danger'>Hapus</button>
                                         </a>
                                     </td>

@@ -1,4 +1,5 @@
 <?php
+$title = "Profile"; // define title addon
 require "../assets/core.asset.php";
 require "partials/head.php";
 ?>

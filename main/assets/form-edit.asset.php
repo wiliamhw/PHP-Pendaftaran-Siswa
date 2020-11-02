@@ -15,5 +15,6 @@ $siswa = $stmt->fetch_assoc();
 
 // If data not found
 if ($stmt->num_rows < 1) {
-    die("Data tidak ditemukan...");
+    // Data tidak ditemukan
+    header("location: 500.php" . "?err=1");
 }
