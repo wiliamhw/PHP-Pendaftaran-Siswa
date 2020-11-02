@@ -1,7 +1,10 @@
 <?php
 
-// Main page address relative to assets
-$mainAddress = "../../main/dist/index.php";
+// Main page address relative to entry/assets
+$mainAddress = "../../main/views/index.view.php";
+
+// Entry page address relative to main/assets
+$entryAddress = "../../entry/views/index.view.php";
 
 /* Database credentials. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */

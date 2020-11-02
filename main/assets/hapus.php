@@ -2,13 +2,7 @@
 // Check if the user isn't logged in yet, if yes then redirect him to welcome page
 session_start();
 
-if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true || $_SESSION["role"] == "user") {
-    header("location: ../../entry/index.php");
-    exit;
-}
-
-// Includue config file
-require_once "config.php";
+require "core.asset.php";
 
 if (isset($_GET['id'])) {
 
@@ -21,8 +15,8 @@ if (isset($_GET['id'])) {
 
         // Attempt to execute the prepared statement
         if ($stmt->execute()) {
-            // Redirect to home page
-            header("Location: welcome/dist/list-siswa.php");
+            // Redirect to list-siswa
+            header("Location: ../views/list-siswa.view.php");
         } else {
             die("Gagal menghapus...");
         }

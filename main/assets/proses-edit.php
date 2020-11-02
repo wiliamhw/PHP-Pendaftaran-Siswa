@@ -1,5 +1,5 @@
 <?php
-require_once "config.php";
+require_once "../../config.php";
 
 // Processing form data when form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -18,8 +18,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Attempt to execute the prepared statement
         if ($stmt->execute()) {
-            // Redirect to home page
-            header("location: welcome/dist/list-siswa.php");
+            // Redirect to list-siswa page
+            header("location: ../views/list-siswa.view.php");
         } else {
             die("Gagal menyimpan perubahan...");
         }
