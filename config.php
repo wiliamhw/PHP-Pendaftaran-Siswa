@@ -1,5 +1,8 @@
 <?php
 
+// Main page address relative to assets
+$mainAddress = "../../main/dist/index.php";
+
 /* Database credentials. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
 define('DB_SERVER', 'localhost');
