@@ -36,12 +36,12 @@ require_once "../../config.php";
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                    <a class="dropdown-item" href="../../entry/reset-password.php">Reset password</a>
+                    <a class="dropdown-item" href="../../entry/views/reset-pass.view.php">Reset password</a>
                     <?php if ($_SESSION["role"] == "admin") : ?>
-                        <a class="dropdown-item" href="../../entry/adminReg.php">Register admin</a>
+                        <a class="dropdown-item" href="../../entry/views/admin-reg.view.php">Register admin</a>
                     <?php endif; ?>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="../../entry/logout.php">Logout</a>
+                    <a class="dropdown-item" href="../../entry/assets/logout.asset.php">Logout</a>
                 </div>
             </li>
         </ul>
