@@ -1,6 +1,6 @@
 <?php
 $title = "Admin reset pass"; // define title addon
-require "../../config.php"; // to get main page address
+require "../../connection.php"; // to get main page address
 require "../assets/reset-pass.asset.php"; // Backend
 require "partials/head.php"; // Front-end template
 ?>

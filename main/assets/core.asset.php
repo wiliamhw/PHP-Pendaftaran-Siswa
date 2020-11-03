@@ -1,7 +1,7 @@
 <?php
 
 // Includue config file
-require_once "../../config.php";
+require_once "../../connection.php";
 
 // Check if the user isn't logged in yet, if yes then redirect him to welcome page
 session_start();
