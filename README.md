@@ -11,7 +11,7 @@
 * User hanya bisa membaca data
 * Admin bisa menambah, mengupdate, dan menghapus data
 * Responsive
-* Routing
+* Router
 
 # Template
 * [Login_v1](https://colorlib.com/wp/template/login-form-v1/)
