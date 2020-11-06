@@ -1,6 +1,6 @@
 <?php
 // Include config file
-require_once "../../connection.php";
+require_once "database/connection.php";
 
 // Define variables and initialize with empty values
 $new_password = $confirm_password = $old_password = "";
@@ -79,7 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Attempt to execute the prepared statement
             if ($stmt->execute()) {
                 // Password updated successfully. Destroy the session, and redirect to login page
-                header("location: ../assets/logout.asset.php");
+                header("location: logout");
                 exit();
             } else {
                 echo "Oops! Something went wrong. Please try again later.";

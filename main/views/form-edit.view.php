@@ -1,6 +1,7 @@
 <?php
 $title = "Update data"; // define title addon
-require "../assets/core.asset.php";
+require_once "../../database/connection.php";
+require "../assets/notlogin.asset.php";
 require "../assets/restrict.asset.php";
 require "../assets/form-edit.asset.php";
 require "partials/head.php";
@@ -10,8 +11,8 @@ require "partials/head.php";
     <div class="container-fluid">
         <h1 class="mt-4">Edit</h1>
         <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item"><a href="index.view.php">Dashboard</a></li>
-            <li class="breadcrumb-item"><a href="list-siswa.view.php">Daftar siswa</a></li>
+            <li class="breadcrumb-item"><a href="../dashboard">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="../siswa/list">Daftar siswa</a></li>
             <li class="breadcrumb-item active">Edit siswa</li>
         </ol>
 
@@ -30,13 +31,16 @@ require "partials/head.php";
 
                 <div class="form-group">
                     <label for="jenis_kelamin">Jenis Kelamin: </label>
+                    <?php $jenis_kelamin = $siswa['jenis_kelamin']; ?>
                     <div id="row">
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="jenis_kelamin" id="inlineRadio1" value="Laki-laki" checked>
+                            <input class="form-check-input" type="radio" name="jenis_kelamin" id="inlineRadio1" value="Laki-laki" 
+                                <?php echo ($jenis_kelamin == 'Laki-laki') ? "checked" : "" ?>>
                             <label class="form-check-label" for="Laki-laki">Laki-laki</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="jenis_kelamin" id="inlineRadio2" value="Perempuan">
+                            <input class="form-check-input" type="radio" name="jenis_kelamin" id="inlineRadio2" value="Perempuan"
+                                <?php echo ($jenis_kelamin == 'Perempuan') ? "checked" : "" ?>>
                             <label class="form-check-label" for="Perempuan">Perempuan</label>
                         </div>
                     </div>
@@ -68,4 +72,4 @@ require "partials/head.php";
     </div>
 </main>
 
-<?php require "partials/footer.php"; ?>
+<?php require "main/views/partials/footer.php"; ?>

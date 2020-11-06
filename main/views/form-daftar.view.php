@@ -1,21 +1,22 @@
 <?php
 $title = "Insert data"; // define title addon
-require "../assets/core.asset.php";
-require "../assets/restrict.asset.php";
-require "../assets/form-daftar.asset.php";
-require "partials/head.php";
+require_once "database/connection.php";
+require "main/assets/notlogin.asset.php";
+require "main/assets/restrict.asset.php";
+require "main/assets/form-daftar.asset.php";
+require "main/views/partials/head.php";
 ?>
 
 <main>
     <div class="container-fluid">
         <h1 class="mt-4">Insert</h1>
         <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item"><a href="index.view.php">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="../dashboard">Dashboard</a></li>
             <li class="breadcrumb-item active">Tambah siswa</li>
         </ol>
 
         <div id="form">
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
+            <form action="daftar" method="POST">
                 <div class="form-group">
                     <label for="nama">Nama Lengkap</label>
                     <input type="text" name="nama" class="form-control" required>
@@ -65,4 +66,4 @@ require "partials/head.php";
     </div>
 </main>
 
-<?php require "partials/footer.php"; ?>
+<?php require "main/views/partials/footer.php"; ?>

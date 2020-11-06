@@ -1,5 +1,3 @@
-<?php require_once "../../connection.php"; ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,7 +36,7 @@
                                 }
                                 ?>
 
-                                <a href="index.view.php">
+                                <a href="dashboard">
                                     <i class="fas fa-arrow-left mr-1"></i> Return to Dashboard
                                 </a>
                             </div>
@@ -59,7 +57,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <script src="../js/scripts.js"></script>
+    <script src="main/js/scripts.js"></script>
 </body>
 
 </html>

@@ -19,10 +19,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Attempt to execute the prepared statement
         if ($stmt->execute()) {
-            // Redirect to login page
-            header("location: " . $mainAddress . "?status=sukses");
+            $_SESSION['status'] = 'sukses';
         } else {
-            header("location: " .  $mainAddress . "?status=gagal");
+            $_SESSION['status'] = 'gagal';
         }
+        // Redirect to login page
+        header("location: ../dashboard");
     }
 }

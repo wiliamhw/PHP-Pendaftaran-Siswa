@@ -1,10 +1,10 @@
 <?php
 $title = "User registration"; // define title addon
-require "../assets/register.asset.php"; // Backend
-require "partials/head.php"; // Front-end template
+require "entry/assets/user-register.asset.php"; // Backend
+require "entry/views/partials/head.php"; // Front-end template
 ?>
 
-<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="login100-form validate-form">
+<form action="../user/register" method="post" class="login100-form validate-form">
     <span class="login100-form-title">
         User Sign Up
     </span>
@@ -49,11 +49,11 @@ require "partials/head.php"; // Front-end template
     </div>
 
     <div class="text-center p-t-136">
-        <a class="txt2" href="index.view.php">
+        <a class="txt2" href=login>
             Sudah punya akun? Login disini
             <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
         </a>
     </div>
 </form>
 
-<?php require "partials/footer.php"; ?>
+<?php require "entry/views/partials/footer.php"; ?>

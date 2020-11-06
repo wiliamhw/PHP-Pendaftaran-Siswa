@@ -1,10 +1,10 @@
 <?php
 $title = "Admin login"; // define title addon
-require "../assets/admin-login.asset.php"; // backend
-require "partials/head.php"; // front end template
+require "entry/assets/admin-login.asset.php"; // backend
+require "entry/views/partials/head.php"; // front end template
 ?>
 
-<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="login100-form validate-form">
+<form action="login" method="post" class="login100-form validate-form">
     <span class="login100-form-title">
         Admin Login
     </span>
@@ -47,16 +47,16 @@ require "partials/head.php"; // front end template
                     </div> -->
 
     <div class="text-center p-t-136">
-        <a class="txt2" href="register.view.php">
+        <a class="txt2" href="../user/register">
             Buat Akun
             <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
         </a>
         <br>
-        <a class="txt2" href="index.view.php">
+        <a class="txt2" href='../user/login'>
             Login sebagai User
             <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
         </a>
     </div>
 </form>
 
-<?php require "partials/footer.php"; ?>
+<?php require "entry/views/partials/footer.php"; ?>

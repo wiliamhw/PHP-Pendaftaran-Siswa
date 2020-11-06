@@ -1,7 +1,8 @@
 <?php
 $title = "Read data"; // define title addon
-require "../assets/core.asset.php";
-require "partials/head.php";
+require_once "database/connection.php";
+require "main/assets/notlogin.asset.php";
+require "main/views/partials/head.php";
 ?>
 
 <main>
@@ -10,23 +11,22 @@ require "partials/head.php";
         <ol class="breadcrumb mb-4">
             <li class="breadcrumb-item active">Overview siswa</li>
         </ol>
-        <?php if (isset($_GET['status'])) : ?>
-            <?php if ($_GET['status'] == 'sukses') : ?>
-                <div class="alert alert-success alert-dismissible fade show" role="alert">
-                    Pendaftaran siswa baru sukses
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            <?php else : ?>
-                <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                    Pendaftaran siswa baru gagal
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            <?php endif; ?>
+        <?php if ($_SESSION['status'] == 'sukses') : ?>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                Pendaftaran siswa baru sukses
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        <?php elseif ($_SESSION['status'] == 'gagal') : ?>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                Pendaftaran siswa baru gagal
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
         <?php endif; ?>
+        <?php $_SESSION['status'] = '';?>
         <div class="row">
             <div class="col-xl-6">
                 <div class="card mb-4">
@@ -104,5 +104,5 @@ require "partials/head.php";
         </div>
     </div>
 </main>
-<?php require "../assets/index.asset.php" ?>;
-<?php require "partials/footer.php" ?>l
+<?php require "main/assets/index.asset.php" ?>;
+<?php require "main/views/partials/footer.php" ?>l

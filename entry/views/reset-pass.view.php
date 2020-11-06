@@ -1,11 +1,11 @@
 <?php
-$title = "Admin reset pass"; // define title addon
-require "../../connection.php"; // to get main page address
-require "../assets/reset-pass.asset.php"; // Backend
-require "partials/head.php"; // Front-end template
+$title = "Reset password"; // define title addon
+require_once "database/connection.php";
+require "entry/assets/reset-pass.asset.php"; // Backend
+require "entry/views/partials/head.php"; // Front-end template
 ?>
 
-<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="login100-form validate-form">
+<form action="reset-pass" method="post" class="login100-form validate-form">
     <span class="login100-form-title">
         Reset Password
     </span>
@@ -40,11 +40,11 @@ require "partials/head.php"; // Front-end template
 
 
     <div class="text-center p-t-136">
-        <a class="txt2" href=<?= $mainAddress ?>>
+        <a class="txt2" href='../main/dashboard'>
             Kembali
             <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
         </a>
     </div>
 </form>
 
-<?php require "partials/footer.php";
+<?php require "entry/views/partials/footer.php";

@@ -1,5 +1,6 @@
 <?php
-require "core.asset.php";
+require_once "database/connection.php";
+require "entry/assets/restrict.asset.php";
 
 // Define variables and initialize with empty values
 $username = $password = "";
@@ -53,9 +54,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;
                             $_SESSION["role"] = "admin";
+                            $_SESSION["status"] = '';
 
                             // Redirect user to main page
-                            header("location: " . $mainAddress);
+                            header("location: ../../main/dashboard");
                         } else {
                             // Display an error message if password is not valid
                             $password_err = "The password you entered was not valid.";

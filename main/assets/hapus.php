@@ -2,7 +2,8 @@
 // Check if the user isn't logged in yet, if yes then redirect him to welcome page
 session_start();
 
-require "core.asset.php";
+require_once "../../database/connection.php";
+require "notlogin.asset.php";
 
 if (isset($_GET['id'])) {
 
@@ -16,10 +17,10 @@ if (isset($_GET['id'])) {
         // Attempt to execute the prepared statement
         if ($stmt->execute()) {
             // Redirect to list-siswa
-            header("Location: ../views/list-siswa.view.php");
+            header("Location: ../siswa/list");
         } else {
             // Gagal menghapus
-            header("location: ../views/500.php" . "?err=2");
+            header("location: ../views/errors/500.php" . "?err=2");
         }
     }
 }

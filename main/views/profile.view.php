@@ -1,14 +1,15 @@
 <?php
 $title = "Profile"; // define title addon
-require "../assets/core.asset.php";
-require "partials/head.php";
+require_once "database/connection.php";
+require "main/assets/notlogin.asset.php";
+require "main/views/partials/head.php";
 ?>
 
 <main>
     <div class="container-fluid">
         <h1 class="mt-4">Profil</h1>
         <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item"><a href='index.php'>Dashboard</a></li>
+            <li class="breadcrumb-item"><a href='dashboard'>Dashboard</a></li>
             <li class="breadcrumb-item active">Profil SMK Coding</li>
         </ol>
         <article id="main-col">
@@ -30,4 +31,4 @@ require "partials/head.php";
     </div>
 </main>
 
-<?php require "partials/footer.php"; ?>
+<?php require "main/views/partials/footer.php"; ?>

@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>401 Error</title>
-    <link href="main/css/styles.css" rel="stylesheet" />
+    <title>404 Error</title>
+    <link href="../../css/styles.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
 </head>
 
@@ -20,21 +20,25 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-6">
                             <div class="text-center mt-4">
-                                <h1 class="display-1">401</h1>
-                                <p class="lead">Unauthorized</p>
-                                <p>Access to this resource is denied.</p>
+                                <h1 class="display-1">500</h1>
+                                <p class="lead">Internal Server Error</p>
 
-                                <?php if (isset($_GET['to'])) : ?>
-                                    <?php if ($_GET['to'] == 'dashboard') : ?>
-                                        <a href='dashboard'>
-                                            <i class="fas fa-arrow-left mr-1"></i> Return to Dashboard
-                                        </a>
-                                    <?php else : ?>
-                                        <a href='\'>
-                                            <i class="fas fa-arrow-left mr-1"></i> Return to Login Menu
-                                        </a>
-                                    <?php endif; ?>
-                                <?php endif; ?>
+                                <?php if (isset($_GET['err'])) {
+                                    if ($_GET['err'] == '1') {
+                                        echo "<p>Data tidak ditemukan</p>";
+                                    } 
+                                    elseif ($_GET['err'] == '2') {
+                                        echo "<p>Gagal menghapus</p>";
+                                    }
+                                    else {
+                                        echo "<p>Gagal menyimpan perubahan</p>";
+                                    }
+                                }
+                                ?>
+
+                                <a href="../../dashboard">
+                                    <i class="fas fa-arrow-left mr-1"></i> Return to Dashboard
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -45,7 +49,7 @@
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid">
                     <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Acme 2020</div>
+                        <div class="text-muted">Copyright &copy; Your Website 2020</div>
                     </div>
                 </div>
             </footer>
@@ -53,7 +57,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <script src="main/js/scripts.js"></script>
+    <script src="../../js/scripts.js"></script>
 </body>
 
 </html>

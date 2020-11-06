@@ -1,5 +1,5 @@
 <?php
-require_once "../../connection.php";
+require_once "../../database/connection.php";
 
 // Processing form data when form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Attempt to execute the prepared statement
         if ($stmt->execute()) {
             // Redirect to list-siswa page
-            header("location: ../views/list-siswa.view.php");
+            header("location: ../siswa/list");
         } else {
             // Gagal menyimpan perubahan...
             header("location: ../views/500.php" . "?err=3");

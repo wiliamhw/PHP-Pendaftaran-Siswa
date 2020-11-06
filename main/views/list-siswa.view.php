@@ -1,15 +1,16 @@
 <?php
 $title = "Edit data"; // define title addon
-require "../assets/core.asset.php";
-require "../assets/restrict.asset.php";
-require "partials/head.php";
+require_once "database/connection.php";
+require "main/assets/notlogin.asset.php";
+require "main/assets/restrict.asset.php";
+require "main/views/partials/head.php";
 ?>
 
 <main>
     <div class="container-fluid">
         <h1 class="mt-4">Tables</h1>
         <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item"><a href="index.view.php">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="../dashboard">Dashboard</a></li>
             <li class="breadcrumb-item active">Daftar siswa</li>
         </ol>
         <div class="card mb-4">
@@ -62,7 +63,7 @@ require "partials/head.php";
                                     <td><?= $siswa['sekolah_asal'] ?></td>
 
                                     <td>
-                                        <a href="form-edit.view.php?id=<?= $siswa['id'] ?>"><button id='edit' type='button' class='btn btn-info'>Edit</button></a> | 
+                                        <a href="../views/form-edit.view.php?id=<?= $siswa['id'] ?>"><button id='edit' type='button' class='btn btn-info'>Edit</button></a> | 
                                         <a href="../assets/hapus.php?id=<?= $siswa['id'] ?>" onclick="return confirm('Yakin ingin menghapus <?= $siswa['nama'] ?> (Id=<?= $siswa['id'] ?>) ?');">
                                             <button id='hapus' type='button' class='btn btn-danger'>Hapus</button>
                                         </a>
@@ -78,4 +79,4 @@ require "partials/head.php";
     </div>
 </main>
 
-<?php require "partials/footer.php"; ?>
+<?php require "main/views/partials/footer.php"; ?>
