@@ -18,9 +18,11 @@ if (isset($_GET['id'])) {
         if ($stmt->execute()) {
             // Redirect to list-siswa
             header("Location: ../siswa/list");
+            exit();
         } else {
             // Gagal menghapus
             header("location: ../views/errors/500.php" . "?err=2");
+            exit();
         }
     }
 }

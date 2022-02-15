@@ -20,9 +20,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($stmt->execute()) {
             // Redirect to list-siswa page
             header("location: ../siswa/list");
+            exit();
         } else {
             // Gagal menyimpan perubahan...
             header("location: ../views/500.php" . "?err=3");
+            exit();
         }
     }
 }

@@ -25,5 +25,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         // Redirect to login page
         header("location: ../dashboard");
+        exit();
     }
 }

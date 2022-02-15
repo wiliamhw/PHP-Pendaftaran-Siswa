@@ -80,6 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if ($stmt->execute()) {
                 // Redirect to login page
                 header("location: login");
+                exit();
             } else {
                 echo "Something went wrong. Please try again later.";
             }

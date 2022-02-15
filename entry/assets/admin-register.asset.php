@@ -80,6 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if ($stmt->execute()) {
                 // Redirect to main page
                 header("location: ../../main/dashboard");
+                exit();
             } else {
                 echo "Something went wrong. Please try again later.";
             }

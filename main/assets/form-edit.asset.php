@@ -3,6 +3,7 @@
 // If Id not found
 if (!isset($_GET['id'])) {
     header('Location: ../siswa/list');
+    exit();
 }
 
 // Get Id from query string
@@ -17,4 +18,5 @@ $siswa = $stmt->fetch_assoc();
 if ($stmt->num_rows < 1) {
     // Data tidak ditemukan
     header("location: errors/500.php" . "?err=1");
+    exit();
 }

@@ -58,6 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Redirect user to main page
                             header("location: ../../main/dashboard");
+                            exit();
                         } else {
                             // Display an error message if password is not valid
                             $password_err = "The password you entered was not valid.";
