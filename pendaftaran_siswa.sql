@@ -60,10 +60,7 @@ CREATE TABLE `calon_siswa` (
 --
 
 INSERT INTO `calon_siswa` (`id`, `nama`, `alamat`, `jenis_kelamin`, `agama`, `sekolah_asal`) VALUES
-(1, 'Lord Dapos', 'Jl. Lolipop', 'Laki-laki', 'Islam', 'SMPN 21 Surabaya'),
-(3, 'William Handi Wijaya', 'Jl. Isekai', 'Laki-laki', 'Kristen', 'SMPN 88 Mondstadt'),
-(4, 'Jean', 'Jl. Monstadt2', 'Perempuan', 'Katolik', 'SMPN 67'),
-(5, 'Lord Kosimp', 'Jl. Kesuburan420', 'Laki-laki', 'Katolik', 'SMPN Virtual Novel');
+(1, 'William Handi Wijaya', 'Jl. Isekai', 'Laki-laki', 'Kristen', 'SMPN 88');
 
 -- --------------------------------------------------------
 

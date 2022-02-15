@@ -72,4 +72,4 @@ require "partials/head.php";
     </div>
 </main>
 
-<?php require "main/views/partials/footer.php"; ?>
+<?php require "./partials/footer.php"; ?>

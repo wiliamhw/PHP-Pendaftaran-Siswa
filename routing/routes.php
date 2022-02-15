@@ -8,7 +8,6 @@ $router->define([
     'entry/user/register' => 'entry/views/user-register.view.php',
     'entry/admin/login' => 'entry/views/admin-login.view.php',
     'entry/admin/register' => 'entry/views/admin-register.view.php',
-    'entry/reset-pass' => 'entry/views/reset-pass.view.php',
     'entry/logout' => 'entry/assets/logout.asset.php',
 
     // Main
