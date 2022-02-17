@@ -27,7 +27,7 @@
                         <a class="dropdown-item" href="../entry/admin/register">Register admin</a>
                     <?php endif; ?>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="../entry/logout">Logout</a>
+                    <a class="dropdown-item" href="/entry/logout">Logout</a>
                 </div>
             </li>
         </ul>
