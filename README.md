@@ -55,7 +55,7 @@ Setelah itu, klik tombol start pada baris Apache di XAMPP, kemudian buka [http:/
 ![tombol start](https://user-images.githubusercontent.com/52129348/154085714-4d7da4b7-af0e-4dcb-ad2c-11e41623e0bc.jpg)  
 
 Jika langkah di atas telah dilakukan dengan benar, maka halaman berikut ini akan tampil di browser.  
-![tampilan](https://user-images.githubusercontent.com/52129348/154085750-bcec34b8-744b-4225-ab6b-227d138a9c44.jpg)  
+![tampilan](https://user-images.githubusercontent.com/52129348/154508799-25d92849-388f-4734-aba7-589367f4a436.jpeg)
 
 ## Langkah 5: Buat sebuah database baru pada phpMyadmin
 Untuk mengakses phpMyAdmin, nyalakan MySQL pada XAMPP terlebih dahulu dengan mengklik tombol **Start**.  
@@ -74,5 +74,5 @@ Untuk melakukan hal ini, buka folder `database`, kemudian copy file `config.exam
 
 ## Langkah 8: Buka aplikasi web pada localhost
 Jika semua langkah di atas telah dilakukan, maka aplikasi ini sudah dapat dibuka 
-pada browser melalui [http://127.0.0.1:8888](http://127.0.0.1:8888).  
+pada browser melalui [http://127.0.0.1:80](http://127.0.0.1:80).  
 ![tampilan website](https://user-images.githubusercontent.com/52129348/154085950-5ec75647-c78f-4fa2-ac74-7630b7f33b26.jpg)  
