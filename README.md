@@ -55,7 +55,7 @@ Setelah itu, klik tombol start pada baris Apache di XAMPP, kemudian buka [http:/
 ![tombol start](https://user-images.githubusercontent.com/52129348/154085714-4d7da4b7-af0e-4dcb-ad2c-11e41623e0bc.jpg)  
 
 Jika langkah di atas telah dilakukan dengan benar, maka halaman berikut ini akan tampil di browser.  
-![tampilan](https://user-images.githubusercontent.com/52129348/154508799-25d92849-388f-4734-aba7-589367f4a436.jpeg)
+![tampilan](https://user-images.githubusercontent.com/52129348/154509339-0e9f40df-e6c3-4188-b20f-a19ef5f101b1.jpeg)
 
 ## Langkah 5: Buat sebuah database baru pada phpMyadmin
 Untuk mengakses phpMyAdmin, nyalakan MySQL pada XAMPP terlebih dahulu dengan mengklik tombol **Start**.  
